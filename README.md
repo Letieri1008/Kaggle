@@ -41,7 +41,48 @@ There are 13 attributes
     and the label
     condition: 0 = no disease, 1 = disease
 
-- Download the PDF : [Heart disease.pdf](https://github.com/user-attachments/files/20358376/Heart.disease.pdf)
+(CODE)
+
+df = pd.read_csv("Downloads/Tour prático de Machine Learning com Scikit-Learn/heart-disease.csv")
+df.head()
+
+pd.crosstab(df["target"],df["sex"]).plot(kind="bar",
+figsize=(10,6),
+color=["salmon","lightblue"])
+plt.title("Frequência de doenças cardíacas por sexo")
+plt.xlabel("0=Não tem doença, 1=Tem doença")
+plt.ylabel("Amostragem")
+plt.legend(["Feminino","Masculino"])
+plt.xticks(rotation=0)
+
+#plot para valores positivos
+
+plt.figure(figsize=(10,6))
+plt.scatter(df["age"][df["target"]==1],
+            df["thalach"][df["target"]==1],
+            c="salmon")
+
+#plot para valores negativos
+plt.scatter(df["age"][df["target"]==0],
+            df["thalach"][df["target"]==0],
+            c="lightblue")
+
+plt.title("Frequência de doenças cardíacas por idade e frequência cardíaca máxima")
+plt.xlabel("Idade")
+plt.legend(["Doença","Saudável"])
+plt.ylabel("Frequência cardíaca máxima")
+
+pd.crosstab(df["cp"], df["target"]).plot(
+    kind="bar",
+    figsize=(10, 6),
+    color=["salmon", "lightblue"]
+)
+
+plt.title("Tipos de dores no peito")
+plt.xlabel("0=Não tem doença, 1=Tem doença")
+plt.ylabel("Amostragem")
+plt.legend(["Feminino", "Masculino"])
+
 
 
 
