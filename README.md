@@ -41,7 +41,8 @@ There are 13 attributes
     and the label
     condition: 0 = no disease, 1 = disease
 
-- Download the PDF : [Heart disease.pdf](https://github.com/user-attachments/files/20358349/Heart.disease.pdf)
+- Download the PDF : [Heart disease.pdf](https://github.com/user-attachments/files/20358376/Heart.disease.pdf)
+
 
 
 
