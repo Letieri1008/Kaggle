@@ -40,3 +40,5 @@ There are 13 attributes
     thal: 0 = normal; 1 = fixed defect; 2 = reversable defect
     and the label
     condition: 0 = no disease, 1 = disease
+
+[Heart disease.pdf](https://github.com/user-attachments/files/20358322/Heart.disease.pdf)
