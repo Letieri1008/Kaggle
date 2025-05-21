@@ -43,47 +43,7 @@ There are 13 attributes
 
 (CODE)
 
-df = pd.read_csv("Downloads/Tour prático de Machine Learning com Scikit-Learn/heart-disease.csv")
-df.head()
-
-pd.crosstab(df["target"],df["sex"]).plot(kind="bar",
-figsize=(10,6),
-color=["salmon","lightblue"])
-plt.title("Frequência de doenças cardíacas por sexo")
-plt.xlabel("0=Não tem doença, 1=Tem doença")
-plt.ylabel("Amostragem")
-plt.legend(["Feminino","Masculino"])
-plt.xticks(rotation=0)
-
-#plot para valores positivos
-
-plt.figure(figsize=(10,6))
-plt.scatter(df["age"][df["target"]==1],
-            df["thalach"][df["target"]==1],
-            c="salmon")
-
-#plot para valores negativos
-plt.scatter(df["age"][df["target"]==0],
-            df["thalach"][df["target"]==0],
-            c="lightblue")
-
-plt.title("Frequência de doenças cardíacas por idade e frequência cardíaca máxima")
-plt.xlabel("Idade")
-plt.legend(["Doença","Saudável"])
-plt.ylabel("Frequência cardíaca máxima")
-
-pd.crosstab(df["cp"], df["target"]).plot(
-    kind="bar",
-    figsize=(10, 6),
-    color=["salmon", "lightblue"]
-)
-
-plt.title("Tipos de dores no peito")
-plt.xlabel("0=Não tem doença, 1=Tem doença")
-plt.ylabel("Amostragem")
-plt.legend(["Feminino", "Masculino"])
-
-
+![codigo_colorido](https://github.com/user-attachments/assets/74d641b3-1b59-4ee7-a0fa-571e583dcb3a)
 
 
 
