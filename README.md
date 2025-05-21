@@ -43,7 +43,6 @@ There are 13 attributes
 
 (CODE)
 
-![codigo_colorido](https://github.com/user-attachments/assets/74d641b3-1b59-4ee7-a0fa-571e583dcb3a)
 
 
 
