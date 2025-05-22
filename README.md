@@ -5,6 +5,9 @@ Resolution: https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci
 he data is already presented in https://www.kaggle.com/ronitf/heart-disease-uci but there are some descriptions and values that are wrong as discussed in https://www.kaggle.com/ronitf/heart-disease-uci/discussion/105877. So, here is re-processed dataset that was cross-checked with the original data https://archive.ics.uci.edu/ml/datasets/Heart+Disease.
 Content
 
+- Neste repositório iremos demonstrar gráficos e estatísticas utilizando python pelo Jupyter lab
+- Futuramente, iremos realizar um modelo de Maching Learning para calcular de forma automática o número de falsos positivos, e verificar qual modelo representa mais efetividade.
+
 There are 13 attributes
 
     age: age in years
